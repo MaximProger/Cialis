@@ -1,0 +1,213 @@
+@import "vars";
+
+body {
+  font-size: 18px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.65;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  color: $text;
+
+  @media (max-width: $notebook) {
+    font-size: 16px;
+  }
+
+  @media (max-width: $tablet) {
+    font-size: 14px;
+  }
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 20px;
+  }
+}
+
+.product__title {
+  margin-bottom: 60px;
+  font-weight: 500;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $mobile) {
+    display: none;
+  }
+}
+
+// Intro
+
+.intro {
+  padding: 60px 0;
+  background: linear-gradient(122.28deg, #0470dc -2.02%, #13f1fc 129.72%);
+  color: #fff;
+
+  @media (max-width: $tablet) {
+    padding: 40px 0;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 20px 0;
+  }
+}
+
+.intro__inner {
+  @media (max-width: $descktop) {
+    text-align: center;
+  }
+}
+
+.intro__text {
+  @media (max-width: $descktop) {
+    margin-bottom: 40px;
+  }
+}
+
+.intro__video {
+  iframe {
+    @media (max-width: 576px) {
+      width: 504px;
+      height: 283.3px;
+    }
+
+    @media (max-width: $mobile) {
+      width: 362.88px;
+      height: 226.64px;
+    }
+
+    @media (max-width: 400px) {
+      width: 290px;
+      height: 180px;
+    }
+  }
+}
+
+// Slider
+
+.slider {
+  padding: 60px 0;
+
+  @media (max-width: $tablet) {
+    padding: 40px 0;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 20px 0;
+  }
+}
+
+.slider__wrapper {
+  @media (max-width: $mobile) {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}
+
+.slider__img {
+  img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+    @media (max-width: $mobile) {
+      width: 70px;
+      height: 70px;
+    }
+  }
+}
+
+.slider__text {
+  margin-left: 40px;
+
+  @media (max-width: $mobile) {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+}
+
+.slider__name {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+// Advant
+
+.advant {
+  padding: 60px 0;
+  font-size: 1.2rem;
+
+  @media (max-width: $tablet) {
+    padding: 40px 0;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 20px 0;
+  }
+}
+
+.advant__item {
+  text-align: center;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.advant__icon {
+  margin-bottom: 10px;
+  i {
+    font-size: 4rem;
+    color: #0470dc;
+  }
+}
+
+// Order
+
+.order {
+  padding: 60px 0;
+  background-color: $color-4;
+
+  @media (max-width: $tablet) {
+    padding: 40px 0;
+  }
+}
+
+.order__form {
+  @media (max-width: $notebook) {
+    order: 2;
+    margin-top: 20px;
+  }
+}
+
+.order__counter {
+  @media (max-width: $notebook) {
+    margin-left: 80px;
+    order: 1;
+  }
+
+  @media (max-width: $tablet) {
+    margin-left: 30px;
+  }
+
+  @media (max-width: 560px) {
+    margin-left: 0;
+  }
+
+  @media (max-width: $mobile) {
+    display: none;
+  }
+}
+// Footer
+.footer {
+  background-color: $color-1;
+}
